@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/header-image.png);
+    
+}
+
+label::after {
+    transition: transform 0.5s;
+}
+
+input[type="radio"]:checked + label + .paragraph {
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+
+input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+
+
